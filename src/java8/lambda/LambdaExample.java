@@ -1,4 +1,4 @@
-package src.java8;
+package src.java8.lambda;
 
 public class LambdaExample {
 
