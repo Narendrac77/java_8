@@ -20,7 +20,7 @@ public class Traditional {
         return total;
     }*/
 
-    //stargte design pattern using lambdas
+    //strategy design pattern using lambdas
   /*  public static int totalValue(List<Integer> values, Predicate<Integer> selector) {
         int total = 0;
         for (int e : values)
