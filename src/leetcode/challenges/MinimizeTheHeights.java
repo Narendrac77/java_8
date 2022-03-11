@@ -38,8 +38,11 @@ public class MinimizeTheHeights {
 
     public static void main(String[] args) {
 
-        int[] n = { 2, 6, 3, 4, 7, 2, 10, 3, 2, 1};
-        int result = getMinDiff(n, n.length,5);
+     //   int[] n = { 2, 6, 3, 4, 7, 2, 10, 3, 2, 1};
+     //  int[] n = { 5,  3,  1, 7};
+        int[] n ={ 1, 5, 8, 10};
+       // int[] n = {3, 9, 12, 16, 20};
+        int result = getMinDiff(n, n.length,3);
         System.out.println(result);
     }
 
@@ -82,7 +85,7 @@ public class MinimizeTheHeights {
 
             diff = Math.min(diff,max-min);
         }
-        System.out.println("min " + min + "max "+ max);
+        System.out.println("min " + min + " max "+ max);
 
         return diff;
     }
