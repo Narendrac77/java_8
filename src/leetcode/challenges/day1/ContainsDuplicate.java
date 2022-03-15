@@ -1,4 +1,4 @@
-package src.leetcode.challenges;
+package src.leetcode.challenges.day1;
 
 import java.util.*;
 
