@@ -1,4 +1,4 @@
-package src.leetcode.challenges;
+package src.leetcode.challenges.algorithms;
 
 //Problem Statement
 /*You are a product manager and currently leading a team to develop a new product.

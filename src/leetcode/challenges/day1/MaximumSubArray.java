@@ -16,6 +16,7 @@ package src.leetcode.challenges.day1;
 //
 //Input: nums = [5,4,-1,7,8]
 //Output: 23
+
 public class MaximumSubArray {
 
     public int maxSubArray(int nums[]){
@@ -31,6 +32,7 @@ public class MaximumSubArray {
         return maxSoFar;
     }
 
+    //Kadane's Algorithm used
     public int maxSubArrayTwo(int nums[]){
         int count = 0;
         int result = 0;
