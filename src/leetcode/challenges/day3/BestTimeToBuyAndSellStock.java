@@ -36,7 +36,7 @@ public class BestTimeToBuyAndSellStock {
             return 0;
         return  Integer.max(maxDifference, num[maxValue] - num[minValue]);
     }
-//Approach Two
+//Approach Two    [ 7, 1, 3, 6, 2]
     public int maxProfitTwo(int[] prices) {
         int maxProfit = 0;
         int minValue = Integer.MAX_VALUE;
@@ -52,6 +52,24 @@ public class BestTimeToBuyAndSellStock {
 
         return maxProfit;
     }
+
+    //Approach 3
+    public int maxProfitThree(int[] prices) {
+        int sum = 0;
+        int maxProfit = 0;
+
+        for(int i=1;i<prices.length;i++) {
+            sum += (prices[i] - prices[i-1]);
+            if(sum > maxProfit) {
+                maxProfit = sum;
+            }
+            if(sum < 0) {
+                sum = 0;
+            }
+        }
+
+        return maxProfit;
+    }
     public static void main(String[] args) {
         BestTimeToBuyAndSellStock buyAndSellStock = new BestTimeToBuyAndSellStock();
         buyAndSellStock.test1();
@@ -60,6 +78,7 @@ public class BestTimeToBuyAndSellStock {
         buyAndSellStock.test4();
         buyAndSellStock.test5();
         buyAndSellStock.test6();
+        buyAndSellStock.test7();
     }
 
     public void test1() {
@@ -91,5 +110,12 @@ public class BestTimeToBuyAndSellStock {
     public void test6(){
         int nums[] = { 4, 7, 2, 1};
         System.out.println(maxProfit(nums));
+    }
+
+    public void test7(){
+        System.out.println(" Balaji input ");
+        int nums[] = {  7, 1, 3, 6, 2};
+        System.out.println(maxProfit(nums));
+        System.out.println(maxProfitTwo(nums));
     }
 }
